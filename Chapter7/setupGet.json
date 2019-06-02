@@ -1,0 +1,28 @@
+[
+  {
+    "description": "simulating get method without any param",
+    "request": {
+      "uri": "/getdemowithoutparam",
+      "method": "get"
+    },
+    "response": {
+      "text": "simulate get method without any param"
+    }
+  },
+
+  {
+    "description": "simulating get method with identified param",
+    "request": {
+      "uri": "/getdemowithparam",
+      "method": "get",
+      "queries": {
+        "name": "zhangmangmang",
+        "age": "22"
+      }
+    },
+    "response": {
+      "text": "zhagnmangmang, simulating get method with proper param!!"
+    }
+  }
+
+]

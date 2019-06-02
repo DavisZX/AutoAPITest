@@ -1,0 +1,29 @@
+[
+  {
+    "description": "simulate redirect to demo-baidu web",
+    "request": {
+      "uri": "/redirecttobaidu"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "simulate redirect from origin web",
+    "request": {
+      "uri": "/redirectdemo-from"
+    },
+    "redirectTo": "/redirectdemo-to"
+  },
+  {
+    "description": "simulate redirect to targeted web",
+    "request": {
+      "uri": "/redirectdemo-to",
+      "method": "get"
+
+    },
+    "response": {
+      "text": "redirect successfully!"
+    }
+  }
+
+
+]

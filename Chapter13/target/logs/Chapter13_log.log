@@ -1,0 +1,19 @@
+2019-01-21 20:11:17.059 [main] INFO  com.course.Application - Starting Application v1.0-SNAPSHOT on zhangxiaofengdeMacBook-Pro.local with PID 4718 (/Users/zhangxiaofeng/Documents/workspace/com.api.automation/AutoAPITest/Chapter13/target/Chapter13-1.0-SNAPSHOT.jar started by zhangxiaofeng in /Users/zhangxiaofeng/Documents/workspace/com.api.automation/AutoAPITest/Chapter13/target)
+2019-01-21 20:11:17.065 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-01-21 20:11:19.069 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-01-21 20:11:19.683 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56ba7179] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-21 20:11:20.411 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8889 (http)
+2019-01-21 20:11:20.467 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-21 20:11:20.467 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-21 20:11:20.489 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/zhangxiaofeng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-01-21 20:11:20.656 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-21 20:11:20.657 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3461 ms
+2019-01-21 20:11:22.256 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-21 20:11:22.673 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-01-21 20:11:22.813 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-21 20:11:22.876 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-21 20:11:22.905 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-21 20:11:23.371 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8889 (http) with context path ''
+2019-01-21 20:11:23.376 [main] INFO  com.course.Application - Started Application in 7.197 seconds (JVM running for 8.114)
+2019-01-21 20:12:07.165 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-01-21 20:12:07.167 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

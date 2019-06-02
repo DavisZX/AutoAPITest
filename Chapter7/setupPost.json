@@ -1,0 +1,26 @@
+[
+  {
+    "description": "simulate post method without param",
+    "request": {
+      "uri": "/postdemowithoutparam",
+      "method": "post"
+    },
+    "response": {
+      "text": "this is the first post demo without param!!"
+    }
+  },
+  {
+    "description": "simulate post method with param",
+    "request": {
+      "uri": "/postdemowithparam",
+      "method": "post",
+      "forms": {
+        "name": "zhangmangmang",
+        "gender": "male"
+      }
+    },
+    "response": {
+      "text": "hey zhangmangmang, this is the second post demo with param!"
+    }
+  }
+]

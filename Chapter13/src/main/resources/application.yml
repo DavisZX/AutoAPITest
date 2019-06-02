@@ -1,0 +1,21 @@
+server:
+  port: 8889
+
+logging:
+  path: logs
+  file: Chapter13_log.log
+
+Spring:
+  application:
+    name: userManager
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/testAPI
+    username: root
+    password: zxf19890207
+
+
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+    - mapper/*

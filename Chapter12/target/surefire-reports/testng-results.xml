@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="mybatis suite" duration-ms="11169" started-at="2019-01-21T11:48:49Z" finished-at="2019-01-21T11:49:00Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="loginTest.loginTrue()[pri:0, instance:com.course.cases.loginTest@566776ad]" name="loginTrue" class="com.course.cases.loginTest"/>
+      </group> <!-- loginTrue -->
+      <group name="loginFalse">
+        <method signature="loginTest.loginFalse()[pri:0, instance:com.course.cases.loginTest@566776ad]" name="loginFalse" class="com.course.cases.loginTest"/>
+      </group> <!-- loginFalse -->
+    </groups>
+    <test name="loginsilulation" duration-ms="11169" started-at="2019-01-21T11:48:49Z" finished-at="2019-01-21T11:49:00Z">
+      <class name="com.course.cases.getUserInfoTest">
+        <test-method status="PASS" signature="getUserInfoTest()[pri:0, instance:com.course.cases.getUserInfoTest@6cd8737]" name="getUserInfoTest" duration-ms="94" depends-on-groups="loginTrue" started-at="2019-01-21T19:48:54Z" description="get user info operation needs user login successfully" finished-at="2019-01-21T19:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserInfoTest -->
+      </class> <!-- com.course.cases.getUserInfoTest -->
+      <class name="com.course.cases.updateUserInfoTest">
+        <test-method status="PASS" signature="updateUserInfoTest()[pri:0, instance:com.course.cases.updateUserInfoTest@22f71333]" name="updateUserInfoTest" duration-ms="3169" depends-on-groups="loginTrue" started-at="2019-01-21T19:48:54Z" description="update user operation need user login" finished-at="2019-01-21T19:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserInfoTest -->
+        <test-method status="PASS" signature="deleteUserInfoTest()[pri:0, instance:com.course.cases.updateUserInfoTest@22f71333]" name="deleteUserInfoTest" duration-ms="3103" depends-on-groups="loginTrue" started-at="2019-01-21T19:48:57Z" description="delete user operation need user login" finished-at="2019-01-21T19:49:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserInfoTest -->
+      </class> <!-- com.course.cases.updateUserInfoTest -->
+      <class name="com.course.cases.loginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.course.cases.loginTest@566776ad]" name="beforeTest" is-config="true" duration-ms="85" started-at="2019-01-21T19:48:49Z" description="prepartion of login test" finished-at="2019-01-21T19:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.course.cases.loginTest@566776ad]" name="loginTrue" duration-ms="1276" started-at="2019-01-21T19:48:49Z" description="user login sucessfully" finished-at="2019-01-21T19:48:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTrue -->
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.course.cases.loginTest@566776ad]" name="loginFalse" duration-ms="91" started-at="2019-01-21T19:48:50Z" description="user login failed" finished-at="2019-01-21T19:48:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFalse -->
+      </class> <!-- com.course.cases.loginTest -->
+      <class name="com.course.cases.addUserTest">
+        <test-method status="PASS" signature="addUserTest()[pri:0, instance:com.course.cases.addUserTest@6108b2d7]" name="addUserTest" duration-ms="3171" depends-on-groups="loginTrue" started-at="2019-01-21T19:48:50Z" description="add user operations need user login" finished-at="2019-01-21T19:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserTest -->
+      </class> <!-- com.course.cases.addUserTest -->
+      <class name="com.course.cases.getUserListTest">
+        <test-method status="PASS" signature="getUserListTest()[pri:0, instance:com.course.cases.getUserListTest@6bf256fa]" name="getUserListTest" duration-ms="148" depends-on-groups="loginTrue" started-at="2019-01-21T19:48:54Z" description="get user list operation need user login successfully" finished-at="2019-01-21T19:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserListTest -->
+      </class> <!-- com.course.cases.getUserListTest -->
+    </test> <!-- loginsilulation -->
+  </suite> <!-- mybatis suite -->
+</testng-results>

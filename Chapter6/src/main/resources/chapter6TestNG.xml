@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testNG">
+    <test name="report config">
+        <classes>
+            <class name = "com.tester.extend.demo.testMethod">
+                <methods>
+                    <include name="testFault"/>
+                    <include name="testFault1"/>
+                    <include name="testTrue"/>
+                    <include name="logEvent"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+    <listeners>
+       <!-- <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>  -->
+       <!-- <listener class-name="com.tester.extend.demo.ExtentTestIReporterListenerOld"/>  -->
+        <listener class-name="com.tester.extend.demo.ExtentTestIReporterListener"/>
+
+    </listeners>
+
+</suite>

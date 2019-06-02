@@ -1,0 +1,40 @@
+test.url:
+  http://localhost:8889
+
+
+login.uri:
+  /v1/login
+
+updateUserInfo.uri:
+  /v1/updateUserInfo
+
+getUserList.uri:
+  /v1/getUserList
+
+getUserInfo.uri:
+  /v1/getUserInfo
+
+
+addUser.uri:
+  /v1/addUser
+
+server:
+  port: 8889
+
+logging:
+  path: logs
+  file: demolog.log
+
+Spring:
+  application:
+    name: report
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/testAPI
+    username: root
+    password: zxf19890207
+
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+    - mapper/*

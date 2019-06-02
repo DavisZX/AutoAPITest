@@ -1,0 +1,86 @@
+[
+  {
+    "description": "simulate get method with cookie",
+    "request": {
+      "uri": "/getdemowithcookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "this is the third demo for get method with cookies!"
+    }
+  },
+  {
+    "description": "simulate post method with cookie",
+    "request": {
+      "uri": "/postdemowithcookie",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zhangmangmang",
+        "gander": "male"
+      }
+    },
+    "response": {
+      "status": "200",
+      "json": {
+        "name": "zhangmangmang",
+        "validation": "valid"
+      }
+    }
+  },
+  {
+    "description": "simulate get method with cookie returned in response",
+    "request": {
+      "uri": "/getdemowithcookieresponse",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "text": "Congruations! cookies returned in response."
+    }
+  },
+  {
+    "description": "simulate get method with cookie carried",
+    "request": {
+      "uri": "/getwithcookieinrequest",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "Congrulations! cookies carried!"
+    }
+  },
+  {
+    "description": "simulate post method with cookie carried",
+    "request": {
+      "uri": "/post/cookies/carried",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zhangmangmang",
+        "gander": "male"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "zhangmangmang": "success",
+        "gender": "verify",
+        "status": "1"
+      }
+    }
+  }
+]
+
+

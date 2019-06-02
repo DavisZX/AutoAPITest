@@ -1,0 +1,22 @@
+[
+  {
+    "description": "simulate post method with header",
+    "request": {
+      "uri": "/postdemowithheaders",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "zhangmangmang",
+        "gender": "female"
+      }
+    },
+    "response": {
+      "json": {
+        "zhangmangmang": "success",
+        "status": "01"
+      }
+    }
+  }
+]

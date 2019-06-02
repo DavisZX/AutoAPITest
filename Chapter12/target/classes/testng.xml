@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "mybatis suite">
+    <test name = "loginsilulation">
+        <classes>
+            <class name = "com.course.cases.loginTest">
+                <methods>
+                    <include name = "loginTrue"/>
+                    <include name = "loginFalse"/>
+                </methods>
+            </class>
+
+            <class name= "com.course.cases.addUserTest">
+                <methods>
+                    <include name = "getUserInfoTest"/>
+                </methods>
+            </class>
+
+            <class name = "com.course.cases.getUserListTest">
+                <methods>
+                    <include name = "getUserListTest"/>
+                </methods>
+            </class>
+
+            <class name = "com.course.cases.getUserInfoTest">
+                <methods>
+                    <include name = "getUserInfoTest"/>
+                </methods>
+            </class>
+
+            <class name= "com.course.cases.updateUserInfoTest">
+                <methods>
+                    <include name = "updateUserInfoTest"/>
+                    <include name = "deleteUserInfoTest"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+    <listeners>
+        <listener class-name="com.course.config.ExtentTestIReporterListener"/>
+    </listeners>
+</suite>

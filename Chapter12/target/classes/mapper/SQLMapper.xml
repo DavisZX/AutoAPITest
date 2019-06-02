@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace= "com.course.model">
+    <select id="loginCase" parameterType="Integer" resultType="com.course.model.login">
+        select * from loginCase where id = #{id}
+    </select>
+
+    <select id="addUserCase" parameterType="Integer" resultType = "com.course.model.addUser">
+        select * from addUserCase where id = #{id}
+    </select>
+
+    <select id="getUserInfoCase" parameterType="Integer" resultType="com.course.model.getUserInfo">
+        select * from getUserInfoCase where id = #{id}
+    </select>
+
+    <select id="getUserListCase" parameterType="Integer" resultType="com.course.model.getUserList">
+        select * from getUserListCase where id = #{id}
+    </select>
+
+    <select id="updateUserInfoCase" parameterType="Integer" resultType="com.course.model.updateUserInfo">
+        select * from updateUserInfoCase where id = #{id}
+    </select>
+
+    <!--verify added user result-->
+    <select id="addUser" parameterType="com.course.model.addUser" resultType="com.course.model.User">
+        select * from user where id = #{id}
+        <!--and userName = #{userName}
+        and password = #{password}
+        and age = #{age}
+        and gander = #{gander}
+        and permission = #{permission}
+        and isDelete = #{isDelete}-->
+    </select>
+
+
+    <!--get user info-->
+    <select id="getUserInfo" parameterType="com.course.model.getUserInfo" resultType="com.course.model.User">
+        select * from user where id = #{userId}
+    </select>
+    <!--get user list-->
+    <select id="getUserList" parameterType="com.course.model.getUserList" resultType="com.course.model.User">
+        select * from user
+        <trim prefix="WHERE" prefixOverrides="and">
+            <if test="null !=userName and ''!=userName">
+                AND userName = #{userName}
+            </if>
+            <if test="null !=age and ''!=age">
+                AND age = #{age}
+            </if>
+            <if test="null !=gander and ''!=gander">
+                AND gander = #{gander}
+            </if>
+        </trim>
+
+    </select>
+
+    <!--get updated data-->
+    <select id="updateUserInfo" parameterType="com.course.model.updateUserInfo" resultType="com.course.model.User">
+        select * from user
+        <trim prefix="WHERE" prefixOverrides="and">
+            <if test="null !=userName and ''!=userName">
+                AND userName = #{userName}
+            </if>
+            <if test="null !=age and ''!=age">
+                AND age = #{age}
+            </if>
+            <if test="null !=gander and ''!=gander">
+                AND gander = #{gander}
+            </if>
+            <if test="null !=permission and ''!=permission">
+                AND permission = #{permission}
+            </if>
+            <if test="null !=isDelete and ''!=isDelete">
+                AND isDelete = #{isDelete}
+            </if>
+        </trim>
+        And id = #{userId}
+    </select>
+
+
+</mapper>
